@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --font-family-primary: "Open Sans", sans-serif;
+    --font-family-secondary: "Inter", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS styles for nav menu links */
+
+nav{
+    /* background-color: #00398E; */
+    background-color: white;
+    display: flex;
+    border-bottom: none; 
+    box-shadow: 0 0.7px 0 lightgrey;
+}
+
+.list-menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 5%;
+}
+
+.list-menu li{
+    margin-right: 50px;
+}
+.list-menu .menu{
+    text-decoration: none;
+    font: normal normal 500 1em/normal var(--font-family-primary);
+    color: black;
+    transition: all 0.1s;
+}
+
+.list-menu .menu:hover {
+    color: #1C864A;
+    border-bottom: 2px solid #1C864A;
+}
+
+.list-menu .menu#link-active{
+    color: #1C864A;
+    border-bottom: 2px solid #1C864A;
+}
+
+.list-menu li:last-child{
+    margin-left: auto;
+}
+
+.list-menu li:last-child .menu{
+    border: 2px solid green;
+    background-color: #1C864A;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    transition: all 0.3s;
+}
+
+.list-menu li:last-child .menu:hover{
+    background-color: white;
+    color: #1C864A;
+}
+.logo{
+    width: 10%;
+    margin: 15px 0;
+    margin-left: 50px;
+}
+.logo img{
+    width: 100%;
+}
+
+/* Jobs page style Author: David Anggawijaya*/
+
+#job-page-section{
+    background-color: #F8FBFA;
+    height: 100vh;
+}
+
+#job-search-left{
+    float: left;
+    width: 75%;
+    border: 1px solid black;
+}
+
+#job-search-right{
+    width: 25%;
+    float: right;
+    border: 1px solid black;
+}
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Job Marketplace" />
+    <meta name="keywords" content="HTML5, CSS" />
+    <meta name="author" content="David Anggawijaya" />
+    <title>Jobs Marketplace</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="" class="logo"><img src="images/logo.svg" alt="company logo"></a>
+            <ul class="list-menu">
+                <li><a href="" class="menu">Home</a></li>
+                <li><a id="link-active" href="" class="menu">Find job</a></li>
+                <li><a href="" class="menu">About</a></li>
+                <li><a href="" class="menu">Enhancements</a></li>
+                <li><a href="" class="menu">Post a job</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="job-page-section">
+        <article id="job-search-left">
+            <form id="job-search-container" action="">
+                <input type="text" name="jobSearch" placeholder="search by job, company, or skills...">
+                <button type="submit">Find <img src="images/arrow-right.svg" alt="search button"></button>
+            </form>
+            <section id="job-title">
+                <h1>Recommended Jobs</h1>
+                <p id="total-jobs">2</p>
+            </section>
+            <div id="job-vaccant-container">
+                <section class="job-container">
+                    <div class="job-overview">
+                        <img class="company-img" src="images/blank-company-logo.svg" alt="company profile image">
+                        <!-- resource material: https://undraw.co/illustrations -->
+                        <div>
+                            <div>
+                                <h2 class="job-role">Web Developer<span class="job-reference-code">ABC12</span></h2>
+                                <h2 class="job-salary">$50,000 - $70,000<span>/ year</span></h2>
+                            </div>
+                            <h3 class="company-name">Google</h3>
+                            <p class="job-desc">We are seeking a talented Web Developer to join our team. 
+                                The ideal candidate will be responsible for developing and maintaining websites, 
+                                ensuring functionality and responsiveness across different devices.
+                            </p>
+                        </div>
+                    </div>
+                    <a class="job-detail-btn" href="">Details</a>
+                </section>
+            </div>
+        </article>
+        <aside id="job-search-right">
+            Filter by:
+        </aside>
+    </main>
+    <footer></footer>
+</body>
+</html>
