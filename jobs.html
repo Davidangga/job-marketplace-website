@@ -26,35 +26,93 @@
     </header>
     <main id="job-page-section">
         <article id="job-search-left">
-            <form id="job-search-container" action="">
-                <input type="text" name="jobSearch" placeholder="search by job, company, or skills...">
-                <button type="submit">Find <img src="images/arrow-right.svg" alt="search button"></button>
-            </form>
-            <section id="job-title">
-                <h1>Recommended Jobs</h1>
-                <p id="total-jobs">2</p>
-            </section>
-            <div id="job-vaccant-container">
-                <section class="job-container">
-                    <div class="job-overview">
-                        <img class="company-img" src="images/blank-company-logo.svg" alt="company profile image">
-                        <!-- resource material: https://undraw.co/illustrations -->
-                        <div>
-                            <div>
-                                <h2 class="job-role">Web Developer<span class="job-reference-code">ABC12</span></h2>
-                                <h2 class="job-salary">$50,000 - $70,000<span>/ year</span></h2>
+            <section id="job-search-scrollable">
+                <form id="job-search" action="">
+                    <input id="search-bar" type="text" placeholder="Seach job by role..." name="jobSearch">
+                    <input id= "search-btn" type="submit" value="">
+                </form>
+                <div id="section-title">
+                    <h1>Recommended Jobs</h1>
+                    <p id="total-jobs">2</p>
+                </div>
+                <section id="job-preview-container">
+                    <a class="job-preview" href="">
+                        <div class="job-preview-title">
+                            <img src="images/Logo-seek.png" alt="company logo">
+                            <div class="job-preview-role">
+                                <h2>Bioinformatics Systems Developer</h2>
+                                <h3>Australian Genome Research Facility Ltd</h3>
                             </div>
-                            <h3 class="company-name">Google</h3>
-                            <p class="job-desc">We are seeking a talented Web Developer to join our team. 
-                                The ideal candidate will be responsible for developing and maintaining websites, 
-                                ensuring functionality and responsiveness across different devices.
-                            </p>
                         </div>
-                    </div>
-                    <a class="job-detail-btn" href="">Details</a>
+                        <p class="job-preview-desc">Designing, developing, and maintaining software systems tailored for bioinformatics workflows...</p>
+                        <div class="job-preview-skills">
+                            <div class="job-skill">Python</div>
+                            <div class="job-skill">Web Framework</div>
+                            <div class="job-skill">Database</div>
+                        </div>
+                        <div class="job-preview-others">
+                            <h4 class="job-preview-location"><img src="images/location-icon.svg" alt="location"> Melbourne, VIC</h4>
+                            <h4 class="job-preview-type">Full time</h4>
+                            <h4 class="job-preview-salary"><span class="job-preview-salary-amount">$ 10K</span>/month</h4>
+                        </div>
+                    </a>
+
+                    <a class="job-preview" href="">
+                        <div class="job-preview-title">
+                            <img src="images/Logo-seek.png" alt="company logo">
+                            <div class="job-preview-role">
+                                <h2>Bioinformatics Systems Developer</h2>
+                                <h3>Australian Genome Research Facility Ltd</h3>
+                            </div>
+                        </div>
+                        <p class="job-preview-desc">Designing, developing, and maintaining software systems tailored for bioinformatics workflows...</p>
+                        <div class="job-preview-skills">
+                            <div class="job-skill">Python</div>
+                            <div class="job-skill">Web Framework</div>
+                            <div class="job-skill">Database</div>
+                        </div>
+                        <div class="job-preview-others">
+                            <h4 class="job-preview-location"><img src="images/location-icon.svg" alt="location"> Melbourne, VIC</h4>
+                            <h4 class="job-preview-type">Full time</h4>
+                            <h4 class="job-preview-salary"><span class="job-preview-salary-amount">$ 10K</span>/month</h4>
+                        </div>
+                    </a>
+
+                    <a class="job-preview" href="">
+                        <div class="job-preview-title">
+                            <img src="images/Logo-seek.png" alt="company logo">
+                            <div class="job-preview-role">
+                                <h2>Bioinformatics Systems Developer</h2>
+                                <h3>Australian Genome Research Facility Ltd</h3>
+                            </div>
+                        </div>
+                        <p class="job-preview-desc">Designing, developing, and maintaining software systems tailored for bioinformatics workflows...</p>
+                        <div class="job-preview-skills">
+                            <div class="job-skill">Python</div>
+                            <div class="job-skill">Web Framework</div>
+                            <div class="job-skill">Database</div>
+                        </div>
+                        <div class="job-preview-others">
+                            <h4 class="job-preview-location"><img src="images/location-icon.svg" alt="location"> Melbourne, VIC</h4>
+                            <h4 class="job-preview-type">Full time</h4>
+                            <h4 class="job-preview-salary"><span class="job-preview-salary-amount">$ 10K</span>/month</h4>
+                        </div>
+                    </a>
+                    <!-- citation: https://www.seek.com.au/job/73975782?ref=search-standalone&type=standout#sol=7de1984372eafeacef6d609bc07521f169eba58d -->
                 </section>
-            </div>
+
+            </section>
+
+            <section id="job-search-detail">
+                <!-- <div id="content-toggle1" class="content">
+                    This content will be shown/hidden on click1.
+                </div>
+                <div id="content-toggle2" class="content">
+                    This content will be shown/hidden on click2.
+                </div> -->
+            </section>
         </article>
+
         <aside id="job-search-right">
             Filter by:
         </aside>
