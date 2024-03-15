@@ -86,8 +86,8 @@ nav{
 
 #job-search-left{
     display: flex;
-    float: left;
     width: 75%;
+    float: left;
 }
 
 /*  */
@@ -146,6 +146,7 @@ nav{
     padding: 5px 20px;
     border-radius: 20px;
     margin-left: 25px;
+    border: 1px solid black;
 }
 
 #job-preview-container{
@@ -245,10 +246,137 @@ nav{
     font-weight: 700;
 }
 
+.content{
+    display: none;
+}
+
+.content:target{
+    display: block;
+}
+
+/* Aside filteration style */
+
+#job-search-right{
+    width: 25%;
+    float: right;
+    height: 100%;
+    background-color: white;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#job-search-right h1{
+    font: normal normal 700 0.9em/normal var(--font-family-primary);
+    color: rgb(150, 150, 150);
+}
+
+#job-search-right #reset-filter{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    float: right;
+    font: normal normal 700 0.9em/normal var(--font-family-secondary);
+    color: rgb(226, 86, 86);
+    margin-bottom: 10px;
+    transition: all 0.2s;
+}
+
+#job-search-right #reset-filter:hover{
+    background-color: rgb(226, 86, 86);
+    color: white;
+}
+
+#job-search-right .filterby-title{
+    clear: right;
+    font: normal normal 500 1em/normal var(--font-family-secondary);
+    letter-spacing: 0.2px;
+    margin-bottom: 10px;
+}
+
+#job-search-right #filterby-company{
+    padding: 5px 40%;
+    padding-left: 5px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#salary-range-container{
+    display: flex;
+    width: 80%;
+    border: 1px solid black;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+
+}
+
+#salary-range-container label{
+    font: normal normal 500 0.9em/normal var(--font-family-secondary);
+    color: black;
+    margin-bottom: 10px;
+}
+
+#salary-range-container div{
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    align-items: center;
+}
 
 
+#salary-minimum, #salary-maximum{
+    width: 80%;
+    height: 30px;
+    padding-left: 5px;
+    border: 1px solid black;
+    font-size: 0.9em;
+    border-radius: 5px;
+}
 
+#job-search-right #filterby-location{
+    padding: 5px 40%;
+    padding-left: 5px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
 
+#employment-type-container{
+    font: normal normal 400 0.9em/normal var(--font-family-primary);
+}
+
+#employment-type-container div{
+    padding-bottom: 15px;
+}
+
+#employment-type-container div label{
+    padding-left: 10px;
+}
+
+#job-search-right #filter-submit{
+    padding: 10px 30px;
+    
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font: normal normal 500 0.9em/normal var(--font-family-primary);
+    background-color: #278E61;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#job-search-right #filter-submit:hover{
+    border-color: #278E61;
+    color: #278E61;
+    background-color: transparent;
+}
 
 
 

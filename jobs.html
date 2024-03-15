@@ -33,10 +33,10 @@
                 </form>
                 <div id="section-title">
                     <h1>Recommended Jobs</h1>
-                    <p id="total-jobs">2</p>
+                    <p id="total-jobs">3</p>
                 </div>
                 <section id="job-preview-container">
-                    <a class="job-preview" href="">
+                    <a class="job-preview" href="#content-toggle1">
                         <div class="job-preview-title">
                             <img src="images/Logo-seek.png" alt="company logo">
                             <div class="job-preview-role">
@@ -57,7 +57,7 @@
                         </div>
                     </a>
 
-                    <a class="job-preview" href="">
+                    <a class="job-preview" href="#">
                         <div class="job-preview-title">
                             <img src="images/Logo-seek.png" alt="company logo">
                             <div class="job-preview-role">
@@ -78,7 +78,7 @@
                         </div>
                     </a>
 
-                    <a class="job-preview" href="">
+                    <a class="job-preview" href="#">
                         <div class="job-preview-title">
                             <img src="images/Logo-seek.png" alt="company logo">
                             <div class="job-preview-role">
@@ -103,18 +103,127 @@
 
             </section>
 
-            <section id="job-search-detail">
-                <!-- <div id="content-toggle1" class="content">
-                    This content will be shown/hidden on click1.
-                </div>
-                <div id="content-toggle2" class="content">
-                    This content will be shown/hidden on click2.
-                </div> -->
+            <section id="job-search-details">
+                <section class="job-detail">
+                    <div class="job-detail-title">
+                        <img src="images/Logo-seek.png" alt="company logo">
+                        <div class="job-detail-role">
+                            <h1>Bioinformatics Systems Developer</h1>
+                            <h2>Australian Genome Research Facility Ltd</h2>
+                        </div>
+                    </div>
+                    <div class="job-detail-overview">
+                        <h3>Role Overview</h3>
+                        <p>Australian Genome Research Facility (AGRF) is experiencing remarkable growth, and we are inviting talented individuals like you to expand your career and join us on our exciting journey. 
+                            <br>
+                            <br>
+                            With more than 25 years of expertise in genomic technologies, bioinformatics, and service delivery, AGRF actively contributes to the national healthcare agenda. Our commitment is reflected in our strong client relationships, memberships and partnerships with national and state genomics health alliances.
+                            <br>
+                            <br>
+                            This is a perfect time for you to become a vital part of our expanding team in this key role of Bioinformatics Systems Developer.
+                        </p>
+                    </div>
+                    <div class="job-detail-responsibility">
+                        <h3>Key Responsibility</h3>
+                        <ol>
+                            <li>Designing, developing, and maintaining software systems tailored for bioinformatics workflows, especially AGRF’s NextGen Automation Pipeline (Bioweb).</li>
+                            <li>Partnering with the Bioinformatics Systems Specialist and bioinformaticians to develop and support analysis pipelines.</li>
+                            <li>Helping to maintain a collaborative development platform for efficient software development and testing.</li>
+                            <li>Working with the Bioinformatics Systems Specialist to help improve software development practices within the Bioinformatics team.</li>
+                        </ol>
+                    </div>
+                    <div class="job-detail-skills">
+                        <h3>Essential Attributes</h3>
+                        <ul>
+                            <li>Tertiary degree in computer science, information technology, bioinformatics, or a related field.</li>
+                            <li>Solid background in general systems development and software engineering principles.</li>
+                            <li>Proven experience in application development with Python, or similar.</li>
+                            <li>Experience with Django, Flask, or similar frameworks for web application development.</li>
+                            <li>Familiarity with frontend web development technologies including HTML, JavaScript, and CSS.</li>
+                            <li>Strong understanding and practical experience with relational databases and database management.</li>
+                            <li>Experience with Unix/Linux operating systems and shell scripting.</li>
+                            <li>Familiarity with distributed version control systems and related workflows and tools (e.g., Git and GitHub).</li>
+                            <li>Ability to work collaboratively in a team environment.</li>
+                        </ul>
+                        <h3>Preferable Attributes</h3>
+                        <ul>
+                            <li>Experience with or interest in bioinformatics.</li>
+                            <li>Understanding of containerisation technologies (e.g., Docker, Singularity, Podman).</li>
+                            <li>Familiarity with software testing and continuous integration tools (e.g., Jenkins, GitHub Actions)</li>
+                            <li>Experience with modern network storage technologies (e.g., NFS, S3).</li>
+                            <li>Knowledge of cloud computing platforms (e.g., Amazon Web Services (AWS), Google Cloud).</li>
+                            <li>Experience with APIs and supporting technologies (e.g., REST, OpenAPI, Swagger).</li>
+                            <li>Knowledge of additional programming languages (e.g., R, Node JS, Java).</li>
+                            <li>Familiarity with Next Generation Sequencing technologies and common bioinformatics tools and techniques.</li>
+                            <li>Experience with High Performance Computing (HPC) clusters and job scheduling systems.</li>
+                        </ul>
+                    </div>
+                    <div class="job-detail-other">
+                        <h3>Roles Detail</h3>
+                        <div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Melbourne VIC</p>
+                            </div>
+                            <div>
+                                <h4>Employment Type</h4>
+                                <p>Full time</p>
+                            </div>
+                            <div>
+                                <h4>Salary Range</h4>
+                                <p>$10,000 - $12,000<span>/month</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-detail-action">
+                        <a href="">Link to Source</a>
+                        <button>Submit a Proposal</button>
+                    </div>
+                </section>
             </section>
         </article>
 
         <aside id="job-search-right">
-            Filter by:
+            <h1>FILTERS</h1>
+            <form action="">
+                <input id="reset-filter" type="reset" value="Clear All">
+                <h2 class="filterby-title">Search Company</h2>
+                <select name="companyName" id="filterby-company">
+                    <option value="">Select</option>
+                </select>
+                <h2 class="filterby-title">Salary Range</h2>
+                <div id="salary-range-container">
+                    <div>
+                        <label for="salary-minimum">Minimum</label>
+                        <input id="salary-minimum" name="minSalary" type="number">
+                    </div>
+                    <div>
+                        <label for="salary-maximum">Maximum</label>
+                        <input type="number" name="maxSalary" id="salary-maximum">
+                    </div>
+                </div>
+                <h2 class="filterby-title">Search Location</h2>
+                <select name="jobLocation" id="filterby-location">
+                    <option value="">Select</option>
+                </select>
+
+                <h2 class="filterby-title">Employment Type</h2>
+                <div id="employment-type-container">
+                    <div>
+                        <input type="checkbox" name="employment" id="full-time" value="full-time">
+                        <label for="full-time">Full-time</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="employment" id="part-time" value="part-time">
+                        <label for="part-time">Part-time</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="employment" id="casual" value="casual">
+                        <label for="casual">Casual</label>
+                    </div>
+                </div>
+                <input id="filter-submit" type="submit" value="Filter">
+            </form>
         </aside>
     </main>
     <footer></footer>
