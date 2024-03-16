@@ -361,7 +361,7 @@ nav{
 
 #job-search-right #filter-submit{
     padding: 10px 30px;
-    
+
     border: 2px solid transparent;
     border-radius: 10px;
     font: normal normal 500 0.9em/normal var(--font-family-primary);
@@ -378,6 +378,155 @@ nav{
     background-color: transparent;
 }
 
+#job-search-details{
+    width: 55%;
+    background-color: white;
+    margin-top: 50px;
+    margin-right: 50px;
+    border-radius: 20px;
+    height: 82vh;
+    overflow: scroll;
+}
+#job-search-details .job-detail{
+    display: none;
+    padding: 30px;
+}
+
+#job-search-details .job-detail:target{
+    display: block;
+}
+
+#job-search-details .job-detail-title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#job-search-details .job-detail-title img{
+    width: 80px;
+    margin-right: 15px;
+}
+
+#job-search-details .job-detail-title h1{
+    font: normal normal 400 1.5em/normal var(--font-family-primary);
+}
+
+#job-search-details .job-detail-title h2{
+    font: normal normal 400 1em/normal var(--font-family-secondary);
+}
+
+#job-search-details .job-detail-overview{
+    margin-bottom: 15px;
+}
+
+#job-search-details .job-detail-overview h3{
+    font: normal normal 700 1em/normal var(--font-family-primary);
+    margin-bottom: 10px;
+}
+
+#job-search-details .job-detail-overview p{
+    font: normal normal 400 0.9em/normal var(--font-family-secondary);
+}
+
+#job-search-details .job-detail-responsibility{
+    margin-bottom: 15px;
+}
+
+#job-search-details .job-detail-responsibility h3{
+    font: normal normal 700 1em/normal var(--font-family-primary);
+    margin-bottom: 10px;
+}
+
+#job-search-details .job-detail-responsibility ol{
+    padding-left: 15px;
+}
+
+#job-search-details .job-detail-responsibility li{
+    font: normal normal 400 0.9em/normal var(--font-family-secondary);
+    padding-bottom: 5px;
+}
+
+#job-search-details .job-detail-skills{
+    margin-bottom: 15px;
+}
+
+#job-search-details .job-detail-skills h3{
+    font: normal normal 700 1em/normal var(--font-family-primary);
+    margin-bottom: 10px;
+}
+
+#job-search-details .job-detail-skills ul{
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+#job-search-details .job-detail-skills li{
+    font: normal normal 400 0.9em/normal var(--font-family-secondary);
+    padding-top: 5px;
+}
+
+#job-search-details .job-detail-other{
+    margin-bottom: 30px;
+}
+
+#job-search-details .job-detail-other .others-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#job-search-details .job-detail-other h3{
+    font: normal normal 700 1em/normal var(--font-family-primary);
+    margin-bottom: 10px;
+}
+
+#job-search-details .job-detail-other h4{
+    font: normal normal 700 0.9em/normal var(--font-family-secondary);
+    margin-bottom: 5px;
+}
+
+#job-search-details .job-detail-other p{
+    font: normal normal 400 0.9em/normal var(--font-family-secondary);
+}
+
+#job-search-details .job-detail-action{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#job-search-details .job-detail-action a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 40px;
+    border: 2px solid transparent;
+    background-color: lightgray;
+    border-radius: 5px;
+    font: normal normal 400 0.9em/normal var(--font-family-secondary);
+    transition: all 0.2s ease;
+}
+
+#job-search-details .job-detail-action a:hover{
+    background-color: transparent;
+    color: rgb(77, 77, 77);
+    border-color: rgb(104, 104, 104);
+}
+
+
+#job-search-details .job-detail-action button{
+    background-color: #278E61;
+    color: white;
+    border: 2px solid transparent;
+    cursor: pointer;
+    padding: 10px 40px;
+    border-radius: 5px;
+    font: normal normal 400 0.9em/normal var(--font-family-secondary);
+    transition: all 0.2s ease;
+}
+
+#job-search-details .job-detail-action button:hover{
+    border-color: #278E61;
+    color: #278E61;
+    background-color: transparent;
+}
 
 
 
