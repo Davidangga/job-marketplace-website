@@ -1,3 +1,8 @@
+/*
+author: [David Anggawijaya]
+Student ID: [103507067]
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root{
@@ -20,6 +25,7 @@ nav{
     display: flex;
     border-bottom: none; 
     box-shadow: 0 2px 0 rgba(211, 211, 211, 0.504);
+    z-index: 100;
 }
 
 .list-menu{
@@ -48,24 +54,6 @@ nav{
 .list-menu .menu#link-active{
     color: #278E61;
     border-bottom: 2px solid #278E61;
-}
-
-.list-menu li:last-child{
-    margin-left: auto;
-}
-
-.list-menu li:last-child .menu{
-    border: 2px solid #278E61;
-    background-color: #278E61;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 12px;
-    transition: all 0.3s;
-}
-
-.list-menu li:last-child .menu:hover{
-    background-color: white;
-    color: #278E61;
 }
 .logo{
     width: 10%;
@@ -155,9 +143,9 @@ nav{
     overflow-y: auto;
 }
 
-#job-preview-container::-webkit-scrollbar { 
+/* #job-preview-container::-webkit-scrollbar { 
     display: none;
-}
+} */
 
 .job-preview{
     border: 2px solid transparent;
@@ -387,6 +375,7 @@ nav{
     height: 82vh;
     overflow: scroll;
 }
+
 #job-search-details .job-detail{
     display: none;
     padding: 30px;
@@ -511,7 +500,7 @@ nav{
 }
 
 
-#job-search-details .job-detail-action button{
+#job-search-details .job-detail-action a:last-child{
     background-color: #278E61;
     color: white;
     border: 2px solid transparent;
@@ -522,13 +511,352 @@ nav{
     transition: all 0.2s ease;
 }
 
-#job-search-details .job-detail-action button:hover{
+#job-search-details .job-detail-action a:last-child:hover{
     border-color: #278E61;
     color: #278E61;
     background-color: transparent;
 }
 
+/*
+filename: [Pouya Behbahani]
+author: [Pouya Behbahani]
+created: [19/03/2024]
+last modified: [19/03/2024]
+description: [lab04.html]
+*/
+
+/*  image with text content on the left */
+.image-container
+{
+    position: relative;
+    width: 100%
+}  
+
+img {
+    display: block;
+    
+  }
+
+.main-image {
+    margin-right: 100%; /* Apply margin only to the main image */
+    display: block;
+    width: 60%;
+    height: 50%;
+}
+
+.button-container{
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Align center to exact center of the image */
+    text-align: center;
+}
+
+.imageDesc{
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.582);
+    
+}
+
+#index-section-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    margin-left: 70px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.navigationBar {
+    width: 100%;
+    padding: 0 1rem;
+    background-color: rgb(158, 215, 158);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+/* Buttons */
+button {
+    padding: 0.75rem 1.5rem;
+    background: #1C864A;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+button:hover {
+    background-color: white;
+    color: #1C864A;
+    
+}
+
+.button-container {
+    
+    top: 92%;
+    left: 21.7%;
+    text-align: center;
+}
+
+
+.applyButton{
+    border-radius: 0.5rem;
+    border: 4px solid green;
+    background-color: #1C864A;
+    color: white;
+    padding: 15px 10px;
+    border-radius: 12px;
+    transition: all 0.5s;
+}
+
+.jobButton{
+    border-radius: 0.5rem;
+    border: 4px solid green;
+    background-color: #1C864A;
+    color: white;
+    padding: 15px 10px;
+    border-radius: 12px;
+    transition: all 0.5s;
+    
+}
+
+/* Main content */
+main {
+    padding: 2rem 0;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Footer */
+/* Footer Enhancements */
+footer {
+    padding: 2rem ;
+    background-color: #a39c9c4d; /* Light grey background */
+    text-align: center;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+footer a:hover {
+    color: #1C864A;
+}
+
+/* Custom bubble categories */
+.info-bubble {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    background-color: #20af5e;
+    border-radius: 25px / 50%;
+    border: 8px solid #1c864a;
+    color: var(--text-color);
+    margin:10px;
+    width: 400px;
+    height: 200px;
+    transition: 0.7s;
+    
+    
+}
+.info-bubble:hover {
+    background-color: #1c864a2a;
+    color: #1C864A;
+    cursor: pointer;
+    transform: scale(1.10);
+    transition-duration: 1s;
+    cursor:default;
+}
+
+.info-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* In case of small screens */
+}
+
+
+
+/* pictures and text as you scroll down */
+.feature {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    font-size: medium;
+    color: #000502c0;
+    will-change: transform, box-shadow;
+}
+.feature:nth-child(even) {
+    flex-direction: row-reverse;     /* Makes it so image on left, text on right then flipped for next one */
+}
+.feature img {
+    width: 30%;
+    height: 30%;
+    border-radius: 10px;
+    margin: 0 35px;
+    transition: transform 3s ease, box-shadow 2s ease;
+}
+
+
+.feature img:hover {
+    transform: scale(1.1); /* Slightly enlarges the image */
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.5); /* Adds shadow for depth */
+}
+
+/* Text css */
+
+.feature-text
+{
+    margin: 0 2%;
+    transition: transform 4s ease
+}
+
+.feature-text:hover
+{
+    transform: scale(1.1); /* Slightly enlarges the image */
+    transition: transform 3s ease
+    
+}
+
+
+/* Ensure it's responsive */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    .circular-category {
+        margin: 1rem auto;
+    }
+}
+
+/* TYPING ANIMATION*/
+@keyframes typing-and-erasing-and-blank {
+    0% { width: 0; }
+    80% { width: 100%; } /* Full text is shown */
+    96% { width: 100%; opacity: 1; } 
+    97% { opacity: 0; } /* Text becomes blank instantly */
+    100% { width: 0; opacity: 0; } /* ResetS for the next cycle */
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    40% { border-color: black; }
+}
+.typing-animation {
+    
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    --font-family-primary: "Open Sans", sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid black; /* The cursor */
+    animation: typing-and-erasing-and-blank 7s steps(70, end) infinite, blink-caret 0.75s step-end infinite;;
+    max-width: fit-content;
+}
 
 
 
 
+ /* NEW  ENHANCMENTS */
+.ImageMap {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    margin: 0 100px;
+    will-change: transform;
+    
+}
+
+
+.ImageMapContent {
+    align-items: center;
+    margin: 30px 0;
+    font-size: medium;
+    color: #050000c0;
+    transition: transform 4s ease
+    
+}
+
+.ImageMapContent:hover {
+    transform: scale(1.1);
+    transition: transform 3s ease
+}
+
+
+.ImageMap .swinMap:hover{
+    transform: scale(1.1);
+    transition: transform 3s ease
+}
+
+
+.ImageMap .swinMap {
+    width: 45%;
+    height: auto; /* Adjust height to maintain aspect ratio */
+    border-radius: 50px;
+    border-radius: 50px;
+    margin-left: 100px;
+    transition: transform 4s ease
+}
+
+    /* NEW ENHANCMENTS ABOVE*/ 
