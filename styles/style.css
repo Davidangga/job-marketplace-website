@@ -1,6 +1,7 @@
 /*
 author: [David Anggawijaya]
 Student ID: [103507067]
+Puprpose: Styling Job pages, Navigation bar, and Footer
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
@@ -20,7 +21,7 @@ Student ID: [103507067]
 nav{
     /* background-color: #00398E; */
     width: 100vw;
-    position: fixed;
+    max-width: 1600px;
     background-color: white;
     display: flex;
     border-bottom: none; 
@@ -67,9 +68,11 @@ nav{
 /* Jobs page style Author: David Anggawijaya*/
 
 #job-page-section{
+    max-width: 1600px;
+    padding-top: 2px;
+    margin: auto;
     background-color: #efeeee;
-    height: 100vh;
-    padding-top: 64px;
+    height: 95vh;
 }
 
 #job-search-left{
@@ -245,7 +248,7 @@ nav{
     float: right;
     height: 100%;
     background-color: white;
-    padding-top: 40px;
+    padding-top: 50px;
     padding-left: 40px;
     padding-right: 40px;
 }
@@ -392,11 +395,11 @@ nav{
     margin-right: 15px;
 }
 
-#job-search-details .job-detail-title h1{
+#job-search-details .job-detail-title h2:first-child{
     font: normal normal 400 1.5em/normal var(--font-family-primary);
 }
 
-#job-search-details .job-detail-title h2{
+#job-search-details .job-detail-title h2:last-child{
     font: normal normal 400 1em/normal var(--font-family-secondary);
 }
 
@@ -519,6 +522,7 @@ nav{
     text-align: center;
     font-size: small;
     padding: 25px;
+    border-top: 1px solid lightgray;
 }
 
 .footer img{
@@ -529,6 +533,7 @@ nav{
 
 /*
 author: [Pouya Behbahani]
+Puprpose: Styling Index pages and CSS typing animation (enhancement)
 */
 
 /* background images */
@@ -717,7 +722,7 @@ author: [Pouya Behbahani]
     transition: transform 4s ease
 }
 
-/* TYPING ANIMATION*/
+/* Enhancement typing animation*/
 @keyframes typing-and-erasing-and-blank {
     0% { width: 0; }
     80% { width: 100%; } /* Full text is shown */
@@ -743,7 +748,9 @@ author: [Pouya Behbahani]
     max-width: fit-content;
 }
 
- /* ENHANCMENTS */
+ /* Author: David Anggawijaya
+ purpose: enhancement for HTML utilising google map Iframe 
+ */
 #ImageMap {
     display: flex;
     height: 100vh;
@@ -764,3 +771,149 @@ author: [Pouya Behbahani]
     height: 80%;
     border-radius: 25px;
 }
+
+/* author: Kushal 
+purpose: Apply page styling
+*/
+
+/* css for section behind form */
+#apply-section {
+    font-family: var(--font-family-primary);
+    background-color :none; 
+    padding :20px ; 
+    border-radius :10px; 
+    width :1100px;
+    margin: 5px auto;
+    max-width: 100%;
+}
+/* removing the default strong font of text */
+#apply-section h1{
+    font-weight: 600;
+    font-size: 35px; 
+    margin-bottom :10px; 
+}
+    
+/* css for the form */
+#apply-section form {
+    border-style: solid;
+    border-color: #278E61;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 30px auto;
+    max-width: 100%;
+
+}
+
+  
+/* the css for the input section for all questions */
+#apply-section form input[type="text"],
+#apply-section form input[type="email"],
+#apply-section form input[type="date"],
+#apply-section form input[type="file"],
+#apply-section form select,
+#apply-section form textarea {
+    font-family: var(--font-family-primary);
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border-radius: 5px;
+    border: 1px solid #bebdbd;
+    box-sizing: border-box; 
+    background-color: #d4f3dc;} 
+
+/* arranging two name boxes in a row */
+.name-container {
+    display: flex;
+    
+}
+#apply-section .input-group {
+    flex-grow:1; 
+    margin-right: 10px;
+}  
+
+/* removing the border of */
+#apply-section fieldset{
+    border: 0;
+}
+/* some gap between different genders */
+.gender{
+    margin: 5px;  
+} 
+
+/* spacing between tickbox and text */
+#apply-section .skills input[type="checkbox"] {
+    margin-right: 1px; 
+}
+
+/* textarea for insterting other skills */
+#apply-section .skills textarea {
+    width: 100%;
+    padding: 1em; 
+}
+
+/* removing the default dot on lists */
+#apply-section ul{
+list-style-type: none;
+}
+
+/* styling for submit button */
+#apply-section #submitbutton
+{
+padding: 10px 20px;
+background-color: #278E61;
+color: white;
+border: 2px solid #278E61;
+border-radius: 5px;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+#apply-section #submitbutton:hover {
+background-color: transparent;
+color: #278E61;
+}  
+
+#apply-section #resetbutton
+{
+padding: 10px 20px;
+background-color: rgb(179, 30, 30);
+color: white;
+border: 2px solid rgb(179, 30, 30);
+border-radius: 5px;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+#apply-section #resetbutton:hover {
+background-color: transparent;
+color: rgb(179, 30, 30);
+}  
+
+
+/* ehancement responsive webpage */
+ /* Styles for screens less than 768px wide */
+    /* @media screen and (max-width: 768px) {
+       
+       .list-menu {
+          flex-direction: column; 
+          margin-left: 0;
+          text-align: center; 
+    }
+        .list-menu li {
+          margin-right: 0; 
+          margin-bottom: 10px; 
+        }
+      
+        .logo{
+          margin: 10px auto; 
+          width: 40%;
+          margin: auto;
+          margin-left: 40px; 
+          
+        }  
+        form {
+          width: 100%; 
+        }} */

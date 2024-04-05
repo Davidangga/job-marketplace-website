@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply</title>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo" ><img src="images/logo.svg" alt="companylogo"></a>
+        <ul class="list-menu">
+          <li><a href="index.html" class="menu">Home</a></li>
+          <li><a href="jobs.html#content-1" class="menu">Find job</a></li>
+          <li><a href="about.html" class="menu">About </a></li>
+          <li><a href="enhancements.html" class="menu"> Enhancements</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="apply-section">
+      <form
+        method="post"
+        action="http://mercury.swin.edu.au/it000000/formtest.php"
+      >
+        <h1>Apply</h1>
+        <label for="JobReferenceNumber"> Job Reference Number </label>
+        <input
+          type="text"
+          id="JobReferenceNumber"
+          name="JobReferenceNumber"
+          pattern="[A=A-Za-z0-9]{5}"
+          required
+          placeholder="Reference Number"
+          title="Exactly 5 alphanumeric characters">
+        <div class="name-container">
+          <div class="input-group">
+            <label for="GivenName">First Name</label>
+            <input
+              type="text"
+              id="GivenName"
+              name="GivenName"
+              placeholder="First name"
+              pattern="[a-zA-Z]{1,20}"
+              title="Must be less than 20 characters"
+              required>
+          </div>
+          <div class="input-group">
+            <label for="FamilyName">Family Name</label>
+            <input
+              type="text"
+              id="FamilyName"
+              name="FamilyName"
+              placeholder="Family name"
+              pattern="[a-zA-Z]{1,20}"
+              title="Must be less than 20 characters"
+              required>
+          </div>
+        </div>
+        <!-- Date of birth -->
+        <label for="DOB"> Date of birth</label>
+        <input type="date" id="DOB" name="Date Of Birth" class="dob" required>
+        <!-- email  -->
+
+        <label for="email"> Enter your email address </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="email"
+          placeholder="Email address"
+          required
+        >
+        <!-- phone number -->
+        <label for="mobile">Mobile Phone </label>
+        <input
+          type="text"
+          id="mobile"
+          name="mobile"
+          class="mobile"
+          pattern="[0-9\s]{8,12}"
+          placeholder="Enter your mobile number"
+          required
+        >
+        <!-- contact menthod -->
+        <label>Prefered contact method</label>
+        <select
+          id="preference"
+          name="prefered_contact_method"
+          class="method"
+          required
+        >
+          <option value="">Please Select</option>
+          <option value="Email">Email</option>
+          <option value="Phone">Phone</option>
+          <option value="SMS">SMS</option>
+          <option value="Nopreference">No preference</option>
+        </select>
+        <!-- address -->
+        <label> Enter your street address</label>
+        <input
+          type="text"
+          id="streetAddress"
+          name="streetAddress"
+          maxlength="40"
+          placeholder="Enter street address (max 40 characters)"
+          required
+        >
+        <!-- suburb/rown -->
+        <label> Suburb/Town</label>
+        <input
+          type="text"
+          id="SuburbTown"
+          name="SuburbTown"
+          maxlength="40"
+          pattern="[a-zA-Z]{1,40}"
+          placeholder="Enter your Suburb/Town (max 40 characters)"
+          title="no symbols or numbers"
+          required
+        >
+        <p>
+          <label>State/Region</label>
+          <select name="state" class="method" required>
+            <option value="">Please Select</option>
+            <option value="VIC">Victoria</option>
+            <option value="NSW">New South Wales</option>
+            <option value="QLD">Queensland</option>
+            <option value="NT">Northern Territory</option>
+            <option value="SA">South Australia</option>
+            <option value="TAS">Tasmani</option>
+            <option value="ACT">Australia Capital Territory</option>
+            <option value="WA">Western Australia</option>
+          </select>
+        </p>
+
+        <!-- gender -->
+
+        <fieldset>
+          <legend>Gender</legend>
+
+          <input type="radio" class="gender" name="Gender" value="Male" required>
+          <label>Male</label>
+
+          <input type="radio" class="gender" name="Gender" value="Female">
+          <label>Female</label>
+
+          <input type="radio" class="gender" name="Gender" value="Other">
+          <label>Other</label>
+
+          <input type="radio" class="gender" name="Gender" value="Prefer not to say">
+          <label>Prefer not to say</label>
+        </fieldset>
+        <!-- work right status -->
+
+        <br>
+
+        <p>
+          <label>Work Rights Status</label>
+          <select name="workright" class="method" required>
+            <option value="">Please Select</option>
+            <option value="citizen">Australian Citizen</option>
+            <option value="PermanentResident">
+              Australian Permanent Resident
+            </option>
+            <option value="Workholiday">Working Holiday Visa</option>
+            <option value="Newzealand_citizen">Newzealand Citizen</option>
+            <option value="othervisa">Other visa</option>
+          </select>
+        </p>
+
+        <!-- origin -->
+
+        <p>
+          <label>Are you aboriginal or torres strait islander origin?</label>
+          <select
+            name="Aboriginal or torres strit origin"
+            class="method"
+            required>
+
+            <option value="">Please Select</option>
+            <option value="aboriginal">Aboriginal</option>
+            <option value="torres strait islander">
+              Torres strait islander
+            </option>
+            <option value="neither">No</option>
+            <option value="prefer not to say">Prefer not to say</option>
+
+          </select>
+
+          <!-- skills -->
+          <label>Please select relevent skills:</label>
+          <br>
+        </p>
+
+        <ul>
+          <li>
+            <input
+              type="checkbox"
+              id="Communication"
+              name="skills"
+              value="Communication"
+              checked>
+            <label for="Communication">Communication </label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="Teamwork"
+              name="skills[]"
+              value="Teamwork">
+            <label for="Teamwork">Teamwork</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="TimeManagement"
+              name="skills[]"
+              value="Time Management">
+            <label for="TimeManagement">Time Management</label>
+          </li>
+
+          <li>
+            <input
+              type="checkbox"
+              id="Softwareinstall"
+              name="skills[]"
+              value="Software installation">
+            <label for="Softwareinstall">Software installation</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="attentiontodetail"
+              name="skills[]"
+              value="attention to detail">
+            <label for="attentiontodetail">Attention to detail</label>
+          </li>
+        </ul>
+        <label> Other skills:</label>
+        <textarea
+          id="otherSkillsTextarea"
+          name="otherskills"
+          rows="4"
+          cols="50"
+          placeholder="please list other skills...(optional)"
+        ></textarea>
+
+        <!-- for cover letter text -->
+
+        <div>
+          <p>
+            <label for="cover-letter">cover letter</label>
+          </p>
+          <textarea
+            id="cover-letter"
+            name="cover-letter"
+            placeholder="provide a cover letter... (required)"
+            rows="4"
+            cols="40"
+          ></textarea>
+        </div>
+
+        <!-- uoload resume -->
+        <p>Upload Your Resume</p>
+        <input type="file" name="documents"><br><br>
+
+        <!-- submit and reset button -->
+        <input id="submitbutton" type="submit" value="Apply">
+        <input id="resetbutton" type="reset" value="Reset Form">
+      </form>
+    </section>
+       <!-- Footer-->
+   <footer class="footer">
+    <img src="images/logo.svg" alt="logo">
+    <p>Your Gateway to Endless Opportunities</p>
+    <p><strong>Copyright</strong> &copy; 2024 JobFinder. All rights reserved.</p>
+</footer>
+  </body>
+</html>
