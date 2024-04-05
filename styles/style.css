@@ -892,6 +892,65 @@ background-color: transparent;
 color: rgb(179, 30, 30);
 }  
 
+/* Author: David Anggawijaya 
+Purpose: Styling About page*/
+
+/* Timetable section style*/
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+
+  }
+
+#timetable-section{
+    height: auto;
+} 
+
+#timetable-section #wrapper{
+    overflow-x: auto;
+}
+
+table{
+    width: 1100px;
+}
+
+th{
+    font-size: 1em;
+}
+
+td{
+    width: 100px;
+    height: 70px;
+}
+
+
+#timetable-section{
+    background-color: var(--background-color);
+    color: black;
+}
+
+#timetable-section .section-title{
+    color: black;
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#timetable-section .unit{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+}
+
+#timetable-section .unit p{
+    display: inline-block;
+    color: black;
+    margin-top: 13%;
+    font-size: var(--timetable-content-size);
+}
+
 
 /* ehancement responsive webpage */
  /* Styles for screens less than 768px wide */
