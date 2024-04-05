@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>JobFinder - Your Gateway to Opportunities</title>
+    <title>JobFinder</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -15,7 +15,7 @@
             <ul class="list-menu">
                 <!--Navigation links-->
                 <li><a id="link-active" href="index.html" class="menu">Home</a></li>
-                <li><a href="jobs.html" class="menu">Find job</a></li>
+                <li><a href="jobs.html#content-1" class="menu">Find job</a></li>
                 <li><a href="about.html" class="menu">About</a></li>
                 <li><a href="enhancements.html" class="menu">Enhancements</a></li>
             </ul>
@@ -25,81 +25,85 @@
     <div id="index-section-background"></div>
     <!--Main content-->
     <main id="index-section-container">
-        <div class="grid">
-            <div>
-                <!-- Main image and description-->
-                <div class="image-container">
-                    <img src = "images/job-search-remotive-home.png" alt="main-image" class="main-image">
-                    <!-- Typing animation NEW -->
-                    <div class="typing-animation">JobFinder - discover your dream job</div> 
-                    <div class="imageDesc">Jobfinder is a leading job search platform dedicated to connecting job seekers to their dream 
-                        careers and assisting employers to find the best candidate for their placement. This is at the very core of
-                         our mission: to streamline the process, make it more efficient, accessible, and effective.
-                    </div>
-                    <div class="button-container">
-                        <a href="apply.html"> <button type="button" class="applyButton">Apply now</button> </a>
-                        <a href="jobs.html"> <button type="button"  class="jobButton">Find a job</button> </a>
-                    </div>
+        <!-- Main image and description-->
+        <div id="main-container">
+            <!-- Typing animation -->
+            <div id="main-left-content">
+                <div id="main-title">
+                    <h1>"Dicover your dream job with us" <span class="typing-animation">- JobFinder</span></h1>
+                    
                 </div>
+                <div id="main-desc">Explore a world of possibilities tailored to your skills and ambitions. With our intuitive platform, 
+                    finding the perfect opportunity has never been easier. You are one click away from unlocking your future with JobFinder.
+                </div>
+                <a href="jobs.html" id="job-button">Find a job</a>
             </div>
+
+            <img src = "images/job-search-remotive-home.png" alt="main-image" id="main-image">
         </div>
-                <!--Information Bubbles-->
-        <div class="info-section" style="text-align: center;">
-            <div class="info-bubble">Trusted by 100K users</div>
-            <div class="info-bubble">2024 Most Trusted Company Award</div>
-            <div class="info-bubble">24/7 Customer support</div>
+        <!--Information Bubbles-->
+        <div id="info-section">
+            <div class="info-bubble">
+                <img src="images/icon-realtime.svg" alt="time-icon">
+                <h3>Real Time Updates</h3>
+                <p>Stay ahead of the curve with our real-time updates, ensuring that you never miss out on the latest job opportunities as they become available.</p>
+            </div>
+            <div class="info-bubble">
+                <img src="images/icon-award.svg" alt="award-icon">
+                <h3>2024 Most Trusted Company Award</h3>
+                <p>Our platform is backed by trusted awards and accolades, reflecting our commitment to excellence and reliability in the job marketplace.</p>
+            </div>
+            <div class="info-bubble">
+                <img src="images/icon-24hour.svg" alt="24hour-icon">
+                <h3>24/7 Customer support</h3>
+                <p>Need assistance at any time of the day? Our dedicated support team is available 24/7 to address your queries throughout your job search journey.</p>
+            </div>
         </div>
 
         <!--Photos then text scroll-->
-        <div class="feature">
-            <img src="images/stock_photo_1.jpg" class="img" alt="Innovative Workspace Photo">
-            <div class="feature-text">
-                <h2>Innovative Workspaces</h2>
-                <p>Discover how our innovative workspaces are designed to boost productivity and creativity 
-                    among professionals.</p>
+        <section id="features-container">
+            <h1><span>Services</span> We Offered</h1>
+            <div class="feature">
+                <img src="images/stock_photo_1.jpg" class="img" alt="Innovative Workspace Photo">
+                <div class="feature-text">
+                    <h2>Networking Sessions</h2>
+                    <p>Expand your professional circle and forge valuable connections through our exclusive networking sessions. Engage with industry leaders, 
+                        potential employers, and like-minded individuals to broaden your horizons and unlock new opportunities.</p>
+                </div>
             </div>
-        </div>
-
-        <div class="feature">
-            <img src="images/stock_photo_2.jpg" class="img" alt="Collaborative Environments Photo">
-            <div class="feature-text">
-                <h2>Collaborative Environments</h2>
-                <p>Learn about the importance of collaboration in our team environments and how it leads to 
-                    successful project outcomes.</p>
+    
+            <div class="feature">
+                <img src="images/stock_photo_2.jpg" class="img" alt="Collaborative Environments Photo">
+                <div class="feature-text">
+                    <h2>Professional Certifications</h2>
+                    <p>Elevate your credentials and enhance your marketability with our professional certification programs. 
+                    From industry-specific certifications to skill development courses, our comprehensive offerings empower you to stay competitive in today's dynamic job market.</p>
+                </div>
             </div>
-        </div>
-
-
-        <div class="feature">
-            <img src="images/stock_photo_3.jpg" class="img" alt="Success Rate Photo">
-            <div class="feature-text">
-                <h2>Success rate</h2>
-                <p>Learn about the importance of collaboration in our team environments and how it leads 
-                    to successful project outcomes.</p>
+    
+    
+            <div class="feature">
+                <img src="images/stock_photo_3.jpg" class="img" alt="Success Rate Photo">
+                <div class="feature-text">
+                    <h2>Interview Preparation</h2>
+                    <p>Gain the confidence and skills needed to ace your next interview with our tailored preparation services.
+                    From mock interviews to personalized coaching, we equip you with the tools and techniques to effectively showcase your strengths and secure your dream job.</p>
+                </div>
             </div>
-        </div>
-
+        </section>
 
         <!-- NEW ADDED ENHANCMENT IMAGE MAPS-->
-    <div class="ImageMap">
-        <div class="ImageMapContent">
-            <div class="ImageMapHeader">
-                <h2>Our Location</h2>
-            </div>
-            <div class="ImageMapText">
-                <p>This photo is a Image Map, 
-                    click on Swinburne and you'll be redirected to our website and location.</p>
-            </div>
+        <div id="ImageMap">
+            <h1>Our <span>Location</span></h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25208.219096591227!2d144.99488721219333!3d-37.83624470604281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642326bae5aaf%3A0x75e96bbd4988f769!2sSwinburne%20University%20of%20Technology!5e0!3m2!1sen!2sau!4v1712275975498!5m2!1sen!2sau" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25208.219096591227!2d144.99488721219333!3d-37.83624470604281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642326bae5aaf%3A0x75e96bbd4988f769!2sSwinburne%20University%20of%20Technology!5e0!3m2!1sen!2sau!4v1712275975498!5m2!1sen!2sau" 
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
     </main>
     <!-- Footer-->
-    <footer class="containerbottom">
-        <small><a href="about.html"><strong> About </strong></a></small>
-        <p><small> &copy; 2024 JobFinder. All rights reserved. </small></p>
+    <footer class="footer">
+        <img src="images/logo.svg" alt="logo">
+        <p>Your Gateway to Endless Opportunities</p>
+        <p><strong>Copyright</strong> &copy; 2024 JobFinder. All rights reserved.</p>
     </footer>
 </body>
 </html>
