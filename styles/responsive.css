@@ -1,0 +1,54 @@
+@media screen and (max-width:480px) {
+    /* navigation hamburger button */
+    /* nav{
+        box-shadow: none;
+    } */
+    nav{
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav .logo{
+        width: 35%;
+        margin: 15px;
+        padding-left: 20px;
+    }
+    nav .list-menu{
+        margin: 0;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        top: 65px;
+        padding-left: 35px;
+        padding-top: 20px;
+        z-index: -1;
+        box-shadow: 0 2px 0 rgba(211, 211, 211, 0.504);
+        transform: translateY(-150%);
+        transition: all 0.5s;
+    }
+
+    nav .list-menu li{
+        margin-bottom: 20px;
+        font-size: 1.2em;
+    }
+
+    nav #hamburger-btn{
+        display: block;
+        width: 10%;
+        height: fit-content;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    nav #hamburger-btn img{
+        width: 100%;
+    }
+
+    nav #hamburger-toggle:checked ~ .list-menu{
+        transform: translateY(0);
+    }
+
+}

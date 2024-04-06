@@ -4,12 +4,16 @@ Student ID: [103507067]
 Puprpose: Styling Job pages, Navigation bar, and Footer
 */
 
+/*  font import from google Inter and open sans */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+/* creating root varible to be used later on */
 :root{
     --font-family-primary: "Open Sans", sans-serif;
     --font-family-secondary: "Inter", sans-serif;
 }
+
+/* applied box model with 0 margin and padding for getting true size of element */
 *{
     margin: 0;
     padding: 0;
@@ -24,9 +28,13 @@ nav{
     max-width: 1600px;
     background-color: white;
     display: flex;
-    border-bottom: none; 
     box-shadow: 0 2px 0 rgba(211, 211, 211, 0.504);
-    z-index: 100;
+    /* # z index to make sure the nav bar will not be covered */
+    z-index: 100; 
+}
+
+nav #hamburger-btn, nav #hamburger-toggle{
+    display: none;
 }
 
 .list-menu{
@@ -46,16 +54,13 @@ nav{
     color: black;
     transition: all 0.1s;
 }
-
-.list-menu .menu:hover {
+/* under hover a link will create a line under it */
+/* the same style applied for currently active menu */
+.list-menu .menu:hover, .list-menu .menu#link-active{
     color: #278E61;
     border-bottom: 2px solid #278E61;
 }
 
-.list-menu .menu#link-active{
-    color: #278E61;
-    border-bottom: 2px solid #278E61;
-}
 .logo{
     width: 10%;
     margin: 10px 0;
@@ -65,9 +70,10 @@ nav{
     width: 100%;
 }
 
-/* Jobs page style Author: David Anggawijaya*/
+/* SECTION STYLE: Jobs page style*/
 
 #job-page-section{
+    /* max width is set equal to laptop screen size to prevent child elements from spreading on larger size */
     max-width: 1600px;
     padding-top: 2px;
     margin: auto;
@@ -75,13 +81,14 @@ nav{
     height: 95vh;
 }
 
+/* job section left side for job positions */
 #job-search-left{
     display: flex;
     width: 75%;
     float: left;
 }
 
-/*  */
+/* job left side split into two part, first is job preview with 45% witdh */
 #job-search-scrollable{
     padding: 50px;
     padding-bottom: 0px;
@@ -96,8 +103,10 @@ nav{
     margin-bottom: 20px;
 }
 
+/* style for search bar on job preview side */
 #job-search-scrollable #search-bar{
     width: 85%;
+    /* purpose of transparent border so that on focus animation the element size won't grow */
     border: 2px solid transparent;
     border-radius: 10px 0 0 10px;
     font-family: var(--font-family-primary);
@@ -107,11 +116,13 @@ nav{
     transition: all 0.2s;
 }
 
+/* under focus search bar transparent border turn green */
 #job-search-scrollable #search-bar:focus{
     border: 2px solid #278E61;
     border-right: none;
 }
 
+/* background image used for search button */
 #job-search-scrollable #search-btn{
     background: url("images/search-icon.svg") no-repeat;
     background-color: #278E61;
@@ -125,6 +136,7 @@ nav{
 }
 
 #section-title{
+    /* #signle shorthand for font */
     font: normal normal 700 1.3em/normal var(--font-family-primary);
     display: flex;
     align-items: center;
@@ -132,6 +144,7 @@ nav{
 }
 
 #section-title #total-jobs{
+    /* #signle shorthand for font */
     font: normal normal 600 0.7em/normal var(--font-family-primary);
     background-color:white;
     padding: 5px 20px;
@@ -140,6 +153,7 @@ nav{
     border: 1px solid black;
 }
 
+/* Below are all simple styling for managing size, positio, and color of each job position preview  */
 #job-preview-container{
     height: 65vh;
     margin-top: 30px;
@@ -233,18 +247,19 @@ nav{
     font-weight: 700;
 }
 
-.content{
-    display: none;
+#job-page-section .job-reference{
+    background-color: lightgrey;
+    font-family: var(--font-family-secondary);
+    font-size: small;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 600;
 }
 
-.content:target{
-    display: block;
-}
-
-/* Aside filteration style */
-
+/* Aside right 25% width */
 #job-search-right{
     width: 25%;
+    /* enforcing float right so it will take space on the right not below the previous elements */
     float: right;
     height: 100%;
     background-color: white;
@@ -264,6 +279,7 @@ nav{
     border: none;
     background: transparent;
     cursor: pointer;
+    /* button reset need to be on right side of aside */
     float: right;
     font: normal normal 700 0.9em/normal var(--font-family-secondary);
     color: rgb(226, 86, 86);
@@ -277,6 +293,7 @@ nav{
 }
 
 #job-search-right .filterby-title{
+    /* float right clear so the placement not affected by previous right float */
     clear: right;
     font: normal normal 500 1em/normal var(--font-family-secondary);
     letter-spacing: 0.2px;
@@ -335,6 +352,7 @@ nav{
 }
 
 #employment-type-container{
+    /* single shorthand font */
     font: normal normal 400 0.9em/normal var(--font-family-primary);
 }
 
@@ -375,14 +393,19 @@ nav{
     overflow: scroll;
 }
 
+/* Below are style for job details located in the middle part of the screen */
+
+/* default set to no display */
 #job-search-details .job-detail{
     display: none;
     padding: 30px;
 }
 
+/* when user clicked on job preview, job detail is shown */
 #job-search-details .job-detail:target{
     display: block;
 }
+
 
 #job-search-details .job-detail-title{
     display: flex;
@@ -395,6 +418,7 @@ nav{
     margin-right: 15px;
 }
 
+/* first h2 title on job detail will be larger size */
 #job-search-details .job-detail-title h2:first-child{
     font: normal normal 400 1.5em/normal var(--font-family-primary);
 }
@@ -481,6 +505,7 @@ nav{
     justify-content: space-evenly;
 }
 
+/* style for link button on job detail */
 #job-search-details .job-detail-action a{
     text-decoration: none;
     color: black;
@@ -499,6 +524,7 @@ nav{
 }
 
 
+/* the last child is submit button */
 #job-search-details .job-detail-action a:last-child{
     background-color: #278E61;
     color: white;
@@ -1096,7 +1122,8 @@ Purpose: Styling About page*/
     margin-top: 120px;
 }
 
-#team-profile-section .card:hover, #team-profile-section .card:active {
+/* Animation for profile hover, card size increase with image becomigng transparent*/
+#team-profile-section .card:hover{
     transform: scale(1.1);
 }
 

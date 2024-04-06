@@ -10,12 +10,14 @@
     <title>About Us</title>
 
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css" media="screen and (max-width: 480px)">
 </head>
 <body>
     <!-- Header navigation-->
     <header>
         <nav>
             <a href="index.html" class="logo"><img src="images/logo.svg" alt="company logo"></a>
+            <input type="checkbox" id="hamburger-toggle">
             <ul class="list-menu">
                 <!--Navigation links-->
                 <li><a href="index.html" class="menu">Home</a></li>
@@ -23,12 +25,16 @@
                 <li><a id="link-active" href="about.html" class="menu">About</a></li>
                 <li><a href="enhancements.html" class="menu">Enhancements</a></li>
             </ul>
+            <label id="hamburger-btn" for="hamburger-toggle"><img src="images/hamburgerbtn.svg" alt="hamburger icon"></label>
         </nav>
     </header>
     <main id="about-page-container">
+
+        <!-- section for group information -->
         <section id="group-details-section">
-            <h1><span>About </span>the Group</span></h1>
+            <h1><span>About </span>the Group</h1>
             <div id="group-detail">
+                <!-- definition list for group details -->
                 <dl>
                     <div>
                         <dt>Group Name:</dt>
@@ -47,6 +53,7 @@
                         <dd>COS10026-Computing Technology Inquiry Project</dd>
                     </div>     
                 </dl>
+                <!-- figure of group image with caption -->
                 <figure>
                     <img src="images/stock_photo_1.jpg" alt="group picture">
                     <figcaption>We are the SmartyPants!</figcaption>
@@ -54,10 +61,12 @@
             </div>
         </section>
         
+        <!-- section for time table -->
         <section id="timetable-section">
                 <h1>Our <span>Timetable</span></h1>
                 <div id="wrapper">
                     <table>
+                        <!-- first row will be heading for hours -->
                         <tr id="row-heading">
                             <th class="col-heading">Day and Period</th>
                             <th>8:00 AM</th>
@@ -74,6 +83,7 @@
                             <th>7:00 PM</th>
                             <th>8:00 PM</th>
                         </tr>
+                        <!-- the rest of the row, the first heading will be day -->
                         <tr>
                             <th>Monday</th>
                             <td></td>
@@ -81,12 +91,14 @@
                             <td></td>
                             <td></td>
                             <td>
+                                <!-- course that occur on that time -->
                                 <div class="unit">
                                     <h3>COS10026 Computer Inquiry Project</h3>
                                     <p>Live Online</p>
                                 </div>
                             </td>
                             <td></td>
+                            <!-- course that took two hours to finish -->
                             <td colspan="2"> <div class="unit">
                                 <h3>COS30019 Introduction Artificial Intelligent</h3>
                                 <p>Lecture</p>
@@ -183,10 +195,12 @@
                     </table>
                 </div>
         </section>
+
+        <!-- section for individual profile -->
         <section id="team-profile-section">
-            <h1>Meet the <span>team</span></h2>
+            <h1>Meet the <span>team</span></h1>
+                <!-- email to link with style using definition list -->
                 <dl>
-                    <h3>Contact Us</h3>
                     <div>
                         <dt>David Anggawijaya:</dt>
                         <dd><a href="mailto:103507067@student.swin.edu.au">103507067@student.swin.edu.au</a></dd>
@@ -203,7 +217,9 @@
             <!-- Image Card Animation -->
             <div id="member-profile">
                 <div class="card">
+                    <!-- image covering the card detail -->
                     <img src="images/david-picture.jpeg" alt="David Picture">
+                    <!-- card content behind the profile image, activate on hover -->
                     <div class="card-content">
                         <div class="card-title">David Anggawijaya</div>
                         <div class="card-desc">

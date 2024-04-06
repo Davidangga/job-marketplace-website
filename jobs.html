@@ -10,12 +10,15 @@
     <title>Jobs Marketplace</title>
 
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css" media="screen and (max-width: 480px)">
+
 </head>
 <body>
     <!-- semantic header for encapsulate navigation menu link -->
     <header>
         <nav>
             <a href="index.html" class="logo"><img src="images/logo.svg" alt="company logo"></a>
+            <input type="checkbox" id="hamburger-toggle">
             <ul class="list-menu">
                 <li><a href="index.html" class="menu">Home</a></li>
                 <!-- link-activate represent current activated menu link -->
@@ -23,6 +26,7 @@
                 <li><a href="about.html" class="menu">About</a></li>
                 <li><a href="enhancements.html" class="menu">Enhancements</a></li>
             </ul>
+            <label id="hamburger-btn" for="hamburger-toggle"><img src="images/hamburgerbtn.svg" alt="hamburger icon"></label>
         </nav>
     </header>
     <!-- semantic main store the main contents of this page-->
@@ -31,7 +35,7 @@
         <!-- article semantic willb e use for job previews and job details-->
         <article id="job-search-left">
             <div id="job-search-scrollable">
-                <form id="job-search" action="https://mercury.swin.edu.au/it000000/formtest.php">
+                <form id="job-search" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
                     <input id="search-bar" type="text" placeholder="Seach job by role..." name="jobSearch">
                     <input id= "search-btn" type="submit" value="">
                 </form>
@@ -42,20 +46,27 @@
 
                 <!-- job preview -->
                 <section id="job-preview-container">
+                    <!-- each job previw will be place within a tag for hyperlink to activate the corresponding job detail -->
                     <a class="job-preview" href="#content-1">
+                        <!-- job preview title with image, title, company, and job reference -->
                         <div class="job-preview-title">
                             <img src="images/Logo-seek.png" alt="company logo">
                             <div class="job-preview-role">
-                                <h2>Technical Support Officer</h2>
+                                <h2>Technical Support Officer <span class="job-reference">JOB001</span></h2>
                                 <h3>Balance Recruitment</h3>
                             </div>
                         </div>
+                        <!-- job descritption -->
                         <p class="job-preview-desc">Responding to business problem with technical knowledge...</p>
+
+                        <!-- job top 3 skills -->
                         <div class="job-preview-skills">
                             <div class="job-skill">Azure</div>
                             <div class="job-skill">Cloud</div>
                             <div class="job-skill">Microsoft</div>
                         </div>
+
+                        <!-- job others information: location, type, and salary -->
                         <div class="job-preview-others">
                             <h4 class="job-preview-location"><img src="images/location-icon.svg" alt="location"> Sydney, NSW</h4>
                             <h4 class="job-preview-type">Full time</h4>
@@ -67,7 +78,7 @@
                         <div class="job-preview-title">
                             <img src="images/Logo-seek.png" alt="company logo">
                             <div class="job-preview-role">
-                                <h2>IT Support</h2>
+                                <h2>IT Support  <span class="job-reference">JOB001</span></h2>
                                 <h3>Fortech IT Solutions</h3>
                             </div>
                         </div>
@@ -85,21 +96,28 @@
                     </a>
                 </section>
             </div>
-            <!-- job details -->
+
+            <!-- job details section-->
             <section id="job-search-details">
+                <!-- each job detail will be hidden and activate by id targeted from job preview hyperlink -->
                 <div class="job-detail" id="content-1">
+                    <!-- job detail title -->
                     <div class="job-detail-title">
                         <img src="images/Logo-seek.png" alt="company logo">
                         <div class="job-detail-role">
-                            <h2>Technical Support Officer</h2>
+                            <h2>Technical Support Officer  <span class="job-reference">JOB001</span></h2>
                             <h2>Balance Recruitment</h2>
                         </div>
                     </div>
+
+                    <!-- job detail description -->
                     <div class="job-detail-overview">
                         <h3>Role Overview</h3>
                         <p>Responding to business problem with technical knowledge, supporting customer base that are going to be largely increase to 600 current users. 
                         </p>
                     </div>
+
+                    <!-- key responsibility on order list -->
                     <div class="job-detail-responsibility">
                         <h3>Key Responsibility</h3>
                         <ol>
@@ -109,6 +127,8 @@
                             <li>Working with the Bioinformatics Systems Specialist to help improve software development practices within the Bioinformatics team.</li>
                         </ol>
                     </div>
+
+                    <!-- job attributes on unordered list-->
                     <div class="job-detail-skills">
                         <h3>Essential Attributes</h3>
                         <ul>
@@ -135,6 +155,8 @@
                             <li>Experience with High Performance Computing (HPC) clusters and job scheduling systems.</li>
                         </ul>
                     </div>
+
+                    <!-- job other details -->
                     <div class="job-detail-other">
                         <h3>Roles Detail</h3>
                         <div class="others-container">
@@ -152,6 +174,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- job action for link to actual website and apply -->
                     <div class="job-detail-action">
                         <a href="https://www.seek.com.au/job/73975782?ref=search-standalone&type=standout#sol=7de1984372eafeacef6d609bc07521f169eba58d">Link to Source</a>
                         <a href="apply.html">Submit a Proposal</a>
@@ -163,7 +187,7 @@
                     <div class="job-detail-title">
                         <img src="images/Logo-seek.png" alt="company logo">
                         <div class="job-detail-role">
-                            <h2>IT Support</h2>
+                            <h2>IT Support  <span class="job-reference">JOB001</span></h2>
                             <h2>Fortech IT Solutions</h2>
                         </div>
                     </div>
@@ -222,7 +246,7 @@
             </section>
         </article>
 
-        <!-- aside on right for jon filters -->
+        <!-- aside on right for job filters -->
         <aside id="job-search-right">
             <h1>FILTERS</h1>
             <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="POST">

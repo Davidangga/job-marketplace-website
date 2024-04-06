@@ -10,12 +10,14 @@
     <title>About Us</title>
 
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css" media="screen and (max-width: 480px)">
 </head>
 <body>
     <!-- Header navigation-->
     <header>
         <nav>
             <a href="index.html" class="logo"><img src="images/logo.svg" alt="company logo"></a>
+            <input type="checkbox" id="hamburger-toggle">
             <ul class="list-menu">
                 <!--Navigation links-->
                 <li><a href="index.html" class="menu">Home</a></li>
@@ -23,6 +25,7 @@
                 <li><a href="about.html" class="menu">About</a></li>
                 <li><a id="link-active" href="enhancements.html" class="menu">Enhancements</a></li>
             </ul>
+            <label id="hamburger-btn" for="hamburger-toggle"><img src="images/hamburgerbtn.svg" alt="hamburger icon"></label>
         </nav>
     </header>
 
