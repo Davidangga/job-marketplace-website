@@ -18,30 +18,44 @@
             <a href="index.html" class="logo"><img src="images/logo.svg" alt="company logo"></a>
             <ul class="list-menu">
                 <!--Navigation links-->
-                <li><a id="link-active" href="index.html" class="menu">Home</a></li>
+                <li><a href="index.html" class="menu">Home</a></li>
                 <li><a href="jobs.html#content-1" class="menu">Find job</a></li>
-                <li><a href="about.html" class="menu">About</a></li>
+                <li><a id="link-active" href="about.html" class="menu">About</a></li>
                 <li><a href="enhancements.html" class="menu">Enhancements</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="about-page-container">
         <section id="group-details-section">
             <h1><span>About </span>the Group</span></h1>
-            <dl>
-                <dt>Group Name:</dt>
-                <dd>SmartyPants</dd>
-                <dt>Group ID:</dt>
-                <dd>Group Tuesday_06_Naveed_G4</dd>
-                <dt>Tutor Name:</dt>
-                <dd>Naveed Ali</dd>
-                <dt>Course we doing:</dt>
-                <dd>COS10026-Computing Technology Inquiry Project</dd>
-            </dl>
+            <div id="group-detail">
+                <dl>
+                    <div>
+                        <dt>Group Name:</dt>
+                        <dd>SmartyPants</dd>
+                    </div>
+                    <div>
+                        <dt>Group ID:</dt>
+                        <dd>Group Tuesday_06_Naveed_G4</dd>
+                    </div>
+                    <div>
+                        <dt>Tutor Name:</dt>
+                        <dd>Naveed Ali</dd>
+                    </div>
+                    <div>
+                        <dt>Course we doing:</dt>
+                        <dd>COS10026-Computing Technology Inquiry Project</dd>
+                    </div>     
+                </dl>
+                <figure>
+                    <img src="images/stock_photo_1.jpg" alt="group picture">
+                    <figcaption>We are the SmartyPants!</figcaption>
+                </figure>
+            </div>
         </section>
         
         <section id="timetable-section">
-                <h1>Our Timetable</h1>
+                <h1>Our <span>Timetable</span></h1>
                 <div id="wrapper">
                     <table>
                         <tr id="row-heading">
@@ -148,6 +162,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <th>Friday</th>
@@ -169,10 +184,50 @@
                 </div>
         </section>
         <section id="team-profile-section">
-            <h1>Meet the team</h2>
-            <img src="" alt="">
-            <h2>Our developers</h2>
-            
+            <h1>Meet the <span>team</span></h2>
+                <dl>
+                    <h3>Contact Us</h3>
+                    <div>
+                        <dt>David Anggawijaya:</dt>
+                        <dd><a href="mailto:103507067@student.swin.edu.au">103507067@student.swin.edu.au</a></dd>
+                    </div>
+                    <div>
+                        <dt>Seyed Pouya Mallak Behbahani:</dt>
+                        <dd><a href="mailto:104540209@student.swin.edu.au">104540209@student.swin.edu.au</a></dd>
+                    </div>
+                    <div>
+                        <dt>Kushal Gautam:</dt>
+                        <dd><a href="mailto:105218219@student.swin.edu.au">105218219@student.swin.edu.au</a></dd>
+                    </div>    
+                </dl>
+            <!-- Image Card Animation -->
+            <div id="member-profile">
+                <div class="card">
+                    <img src="images/david-picture.jpeg" alt="David Picture">
+                    <div class="card-content">
+                        <div class="card-title">David Anggawijaya</div>
+                        <div class="card-desc">
+                            With experience in web development and a current data engineering internship, I bring a diverse skill set and passion to the team. Proficient in website frameworks, databases,
+                             and cloud technologies, my interests extend to AI, trading, quantitative development, and investment. Despite my expertise, I've never won big in trading - but it's all part of 
+                             the learning journey! Let's code, learn, and laugh together!
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/david-picture.jpeg" alt="Pouya Picture">
+                    <div class="card-content">
+                        <div class="card-title">Smart Traders not Gamblers</div>
+                        <div class="card-desc">This book taught me the right way to trade any market. This book is about basic technical anylisis and traders psychology</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/david-picture.jpeg" alt="Kushal Picture">
+                    <div class="card-content">
+                        <div class="card-title">Bandarmology</div>
+                        <div class="card-desc">When talking about stocks market, there will always be a big player with large money that can move the stock price. This book taugh me how to detect this big players and follow their move.</div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <!-- Footer-->

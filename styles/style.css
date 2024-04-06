@@ -540,6 +540,7 @@ Puprpose: Styling Index pages and CSS typing animation (enhancement)
 #index-section-container {
     width: 100%;
     max-width: 1600px;
+    margin: auto;
     overflow: hidden;
     font-family: var(--font-family-primary);
     line-height: 1.6;
@@ -784,7 +785,8 @@ purpose: Apply page styling
     border-radius :10px; 
     width :1100px;
     margin: 5px auto;
-    max-width: 100%;
+    max-width: 1600px;
+    
 }
 /* removing the default strong font of text */
 #apply-section h1{
@@ -895,84 +897,263 @@ color: rgb(179, 30, 30);
 /* Author: David Anggawijaya 
 Purpose: Styling About page*/
 
-/* Timetable section style*/
+/* settign up common padding for the whole child elements in this section */
+#about-page-container{
+    max-width: 1600px;
+    margin: auto;
+    padding: 50px; 
+    width: 100vw;
+    font-family: var(--font-family-primary);
+}
 
-table, th, td {
+/* SECTION STYLE: style for group and tutor detail section*/
+#group-details-section{
+    height: 80vh;
+}
+
+#group-details-section h1{
+    font-size: 1.7em;
+    text-align: center;
+}
+
+#group-details-section h1 span{
+    color: #278E61;
+}
+
+/* styling definition list and group picture to be side by side */
+#group-details-section #group-detail{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* definition list style for both group profile and team contacts*/
+#group-details-section dl, #team-profile-section dl{
+    padding: 30px;
+    padding-bottom: 20px;
+    margin-right: 30px;
+    color: black;
+    width: 40%;
+    height: fit-content;
+    /* definition styling background border */
+    background: rgba( 139, 201, 151, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+/* this style ensure that dt and df is side by side using flex */
+#group-details-section dl div, #team-profile-section dl div{
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#group-details-section dt, #team-profile-section dt{
+    font-weight: bold;
+    width: 30%;
+}
+
+#group-detail figure{
+    width: 40%;
+}
+
+/* Styling figure image border */
+#group-detail img{
+    width: 100%;
     border: 2px solid black;
+    border-radius: 15px;
+}
+
+
+/* setting default attributes for table border and its cells */
+#timetable-section table, th, td {
+    color: black;
+    border: 2px solid white;
     border-collapse: collapse;
+}
 
-  }
-
+/* SECTION STYLE: time table will be centered in the section utilising flex*/
 #timetable-section{
-    height: auto;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
 } 
 
+#timetable-section h1{
+    font-size: 1.7em;
+    margin-bottom: 25px;
+}
+
+#timetable-section h1 span{
+    color: #278E61;
+}
+
+/* incase for smaller screen the table will be overflow scrollable instead */
 #timetable-section #wrapper{
+    width: 90%;
     overflow-x: auto;
 }
 
-table{
-    width: 1100px;
+/* background color for cells */
+#timetable-section th,td,tr{
+    background-color: #8BC997;
 }
 
-th{
-    font-size: 1em;
-}
-
-td{
+/* default cell size */
+#timetable-section td{
     width: 100px;
     height: 70px;
 }
 
-
-#timetable-section{
-    background-color: var(--background-color);
-    color: black;
-}
-
-#timetable-section .section-title{
-    color: black;
-    display: inline-block;
-    margin-top: 50px;
-    margin-bottom: 30px;
-}
-
+/* styling for each unit on timetable */
 #timetable-section .unit{
     height: 100%;
     width: 100%;
     text-align: center;
-
-}
-
-#timetable-section .unit p{
-    display: inline-block;
-    color: black;
     margin-top: 13%;
-    font-size: var(--timetable-content-size);
+}
+
+/* SECTION STYLE: style for individual profile */
+#team-profile-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+#team-profile-section h1{
+    margin-bottom: 50px;
+    font-size: 1.7em;
+}
+
+#team-profile-section h1 span{
+    color: #278E61;
+}
+
+/* Extra custom on definition list for contact email */
+#team-profile-section dl{
+    width: 50%;
+}
+
+#team-profile-section dl h3{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#team-profile-section dl dt{
+    width: 50%;
+}
+#team-profile-section dl dd{
+    width: fit-content;
+}
+
+#team-profile-section dl a{
+    text-decoration: none;
+    font-weight: bold;
+    color: darkblue;
+
+}
+
+#team-profile-section{
+    height: 100vh;
+    margin-bottom: 10%;
+}
+
+#team-profile-section #member-profile{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    justify-content: center;
+}
+#team-profile-section .card{
+    position: relative;
+    width: 20vw;
+    height: 50vh;
+    margin-right: 20px;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+#team-profile-section .card img{
+    position: absolute;
+    width: 100%;
+    border-radius: 20px;
+    transition: all 0.5s;
+    z-index: 2;
+}
+
+#team-profile-section .card .card-content{
+    position: absolute;
+    color: black;
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+    margin-top: 120px;
+}
+
+#team-profile-section .card:hover, #team-profile-section .card:active {
+    transform: scale(1.1);
+}
+
+#team-profile-section .card img:hover{
+    opacity: 0.05;
+}
+
+#team-profile-section .card-title{
+    font-weight: 600;
+    margin: 10px;
+}
+
+#team-profile-section .card-desc{
+    font-weight: 500;
+    font-size: 0.9em;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+/* SECTION STYLE: Enhancements style */
+#enhancement-section{
+    max-width: 1600px;
+    height: 95vh;
+    padding: 50px;
+    font-family: var(--font-family-primary);
+}
+#enhancement-section h1 span{
+    color: #278E61;
+}
+#enhancement-section h1{
+    margin-bottom: 30px;
+}
+
+#enhancement-section div{
+    margin-bottom: 25px;
+}
+
+#enhancement-section div a{
+    display: block;
+    width: fit-content;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: large;
+    color: #278E61;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+#enhancement-section div a:hover{
+    border-bottom: 2px solid #278E61;
+}
+
+#enhancement-section div p{
+    width: 60%;
 }
 
 
-/* ehancement responsive webpage */
- /* Styles for screens less than 768px wide */
-    /* @media screen and (max-width: 768px) {
-       
-       .list-menu {
-          flex-direction: column; 
-          margin-left: 0;
-          text-align: center; 
-    }
-        .list-menu li {
-          margin-right: 0; 
-          margin-bottom: 10px; 
-        }
-      
-        .logo{
-          margin: 10px auto; 
-          width: 40%;
-          margin: auto;
-          margin-left: 40px; 
-          
-        }  
-        form {
-          width: 100%; 
-        }} */
+
+
