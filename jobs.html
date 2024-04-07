@@ -22,7 +22,7 @@
             <ul class="list-menu">
                 <li><a href="index.html" class="menu">Home</a></li>
                 <!-- link-activate represent current activated menu link -->
-                <li><a id="link-active" href="jobs.html#content-1" class="menu">Find job</a></li>
+                <li><a id="link-active" href="jobs.html" class="menu">Find job</a></li>
                 <li><a href="about.html" class="menu">About</a></li>
                 <li><a href="enhancements.html" class="menu">Enhancements</a></li>
             </ul>
@@ -245,9 +245,10 @@
                  <!-- citation: https://www.seek.com.au/job/73975782?ref=search-standalone&type=standout#sol=7de1984372eafeacef6d609bc07521f169eba58d -->
             </section>
         </article>
-
+        <input type="checkbox" id="filter-toggle">
         <!-- aside on right for job filters -->
         <aside id="job-search-right">
+            <label id="filter-btn" for="filter-toggle"><img src="images/filter-btn.svg" alt="show filter button"></label>
             <h1>FILTERS</h1>
             <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="POST">
                 <input id="reset-filter" type="reset" value="Clear All">

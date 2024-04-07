@@ -1,31 +1,38 @@
+/* Author = David Anggawijaya 103507067
+Purpose: Styling for mobile responsiveness*/
+
 @media screen and (max-width:480px) {
     /* navigation hamburger button */
-    /* nav{
-        box-shadow: none;
-    } */
     nav{
         position: relative;
         justify-content: space-between;
         align-items: center;
     }
+    /* logo on mobile is set bigger */
     nav .logo{
         width: 35%;
         margin: 15px;
         padding-left: 20px;
     }
+
+    /* navigation menu i smade hidden on top of screen with orientation change to vertical */
     nav .list-menu{
         margin: 0;
         align-items: center;
         display: flex;
+        /* change to vertical */
         flex-direction: column;
+        /* position absolute so it placed outside nav element*/
         position: absolute;
         background-color: white;
         width: 100%;
         top: 65px;
         padding-left: 35px;
         padding-top: 20px;
+        /* to make it appear behind nav logo and hamburger btn */
         z-index: -1;
         box-shadow: 0 2px 0 rgba(211, 211, 211, 0.504);
+        /* move the menu list to ontop of screen */
         transform: translateY(-150%);
         transition: all 0.5s;
     }
@@ -47,8 +54,227 @@
         width: 100%;
     }
 
+    /* on clicked hamburger label will checked the checkbox that will pull down the menu list */
     nav #hamburger-toggle:checked ~ .list-menu{
         transform: translateY(0);
+    }
+
+    /* Index Page RESPONSSIVE STYLE*/
+
+    #index-section-container #main-container{
+        height: 95vh;
+    }
+
+    /* main tag heading will get full width */
+    #index-section-container #main-container #main-left-content{
+        width: 100%;
+    }
+
+    #index-section-container #main-container #main-title{
+        width: 100%;
+        font-size: 1em;
+    }
+
+    /* main image beside heading will be remove */
+    #index-section-container #main-container img{
+        display: none;
+    }
+
+    /* info bubbles will be made oriented vertical */
+    #index-section-container #info-section{
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    #index-section-container .info-bubble{
+        width: 70%;
+    }
+
+    #features-container{
+        padding: 0 5%;
+    }
+    #features-container h1{
+        font-size: 1.5em;
+
+    }
+
+    /* feature section is made vertical */
+    #features-container .feature{
+        flex-direction: column;
+    }
+
+    /* image cover full width */
+    #features-container .feature img{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #features-container .feature .feature-text{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    #ImageMap{
+        height: 70vh;
+    }
+    /* iframe size smaller on mobile */
+    #ImageMap iframe{
+        width: 90%;
+        height: 80%;
+    }
+
+    /* Job Page RESPONSSIVE STYLE*/
+
+    #job-page-section{
+        /* overflow hidden so filter aside can be hide on the right*/
+        position: relative;
+        overflow: hidden;
+        width: 100vw;
+        height: fit-content;
+    }
+
+    #job-page-section #section-title{
+        padding: 25px 0;
+        font-size: 1em;
+    }
+
+    #job-page-section #section-title p{
+        font-size: 1.1em;
+    }
+
+    #job-search-left{
+        flex-direction: column;
+        width: 100vw;
+        height: fit-content;
+
+    }
+
+    /* job preview willb e disable */
+    #job-preview-container{
+        display: none;
+    }
+
+    /* set new width so job details can fill the whole screen */
+    #job-search-scrollable{
+        width: 100%;
+        height: fit-content;
+    }
+    #job-search-details{
+        width: 90%;
+        margin: auto;
+        border-radius: 0px;
+        background-color: transparent;
+        height: fit-content;
+        overflow: hidden;
+    }
+
+    #job-search-details .job-detail{
+        display: block;
+        margin-bottom: 30px;
+        background-color: white;
+        border-radius: 25px;
+    }
+
+    .job-detail-action a{
+        margin-right: 10px;
+    }
+
+    /* job filters section aside is made absolute of the whole section */
+    #job-search-right{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        /* moving it to the right side to hide */
+        transform: translateX(100%);
+        transition: 0.3s ease;
+    }
+
+    /* display the button for show filter */
+    #job-search-right #filter-btn{
+        position: relative;
+        display: block;
+        transform: translateX(-22%);
+    }
+
+    #job-search-right #filter-btn img{
+        width: 20%;
+    }
+
+    /* filter aside is shown on clicked */
+    #filter-toggle:checked ~ #job-search-right{
+        transform: translateX(0);
+    }
+
+    /* Apply Page Responsiveness */
+
+    /* mostly text and input form which come with fluid built in size from HTML */
+    /* so simply seting up the with for the section */
+    #apply-section{
+        width: 100vw;
+    }
+
+    /* About page Responsiveness */
+    /* no special style beign aplied only changing size and flex direction */
+    #about-page-container{
+        max-width: 460px;
+        height: fit-content;
+    }
+
+    #group-details-section #group-detail{
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+    }
+
+    #group-details-section h1{
+        margin-bottom: 30px;
+    }
+
+    #group-details-section dl, #team-profile-section dl{
+        margin-bottom: 30px;
+        margin-right: 0;
+        width: 100%;
+        overflow: scroll;
+    }
+
+    #group-details-section dt, #team-profile-section dt{
+        width: 50%;
+    }
+    #group-details-section dd, #team-profile-section dd{
+        width: 30%;
+    }
+
+    #group-details-section figure{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #timetable-section{
+        height: 85vh;
+    }
+
+    #team-profile-section{
+        height: fit-content;
+    }
+
+    #member-profile{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+
+    }
+
+    #member-profile .card{
+        width: 82%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    /* enhancement page Responssive */
+
+    #enhancement-section div p{
+        width: 100%;
     }
 
 }

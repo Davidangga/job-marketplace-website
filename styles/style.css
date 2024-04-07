@@ -268,6 +268,15 @@ nav #hamburger-btn, nav #hamburger-toggle{
     padding-right: 40px;
 }
 
+#filter-toggle{
+    display: none;
+}
+
+#job-search-right #filter-btn{
+    display: none;
+}
+
+
 #job-search-right h1{
     font: normal normal 700 0.9em/normal var(--font-family-primary);
     color: rgb(150, 150, 150);
@@ -1074,9 +1083,6 @@ Purpose: Styling About page*/
 #team-profile-section dl dt{
     width: 50%;
 }
-#team-profile-section dl dd{
-    width: fit-content;
-}
 
 #team-profile-section dl a{
     text-decoration: none;
@@ -1161,7 +1167,7 @@ Purpose: Styling About page*/
     margin-bottom: 25px;
 }
 
-#enhancement-section div a{
+#enhancement-section div .hyperlink-enhancement{
     display: block;
     width: fit-content;
     margin-bottom: 10px;
@@ -1173,12 +1179,13 @@ Purpose: Styling About page*/
     border-bottom: 2px solid transparent;
 }
 
-#enhancement-section div a:hover{
+#enhancement-section div .hyperlink-enhancement:hover{
     border-bottom: 2px solid #278E61;
 }
 
 #enhancement-section div p{
     width: 60%;
+    margin-bottom: 10px;
 }
 
 
