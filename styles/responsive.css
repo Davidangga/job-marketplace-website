@@ -271,10 +271,16 @@ Purpose: Styling for mobile responsiveness*/
         margin-bottom: 20px;
     }
 
+    #member-profile .card img{
+        height: 100%;
+        width: 100%;
+    }
+
     /* enhancement page Responssive */
 
     #enhancement-section div p{
         width: 100%;
     }
+
 
 }

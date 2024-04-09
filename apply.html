@@ -15,6 +15,7 @@
         <ul class="list-menu">
           <li><a href="index.html" class="menu">Home</a></li>
           <li><a href="jobs.html" class="menu">Find job</a></li>
+          <li><a id="link-active" href="apply.html" class="menu">Apply job</a></li>
           <li><a href="about.html" class="menu">About </a></li>
           <li><a href="enhancements.html" class="menu"> Enhancements</a></li>
         </ul>
@@ -87,7 +88,7 @@
           required
         >
         <!-- contact menthod -->
-        <label>Prefered contact method</label>
+        <label for="preference">Prefered contact method</label>
         <select
           id="preference"
           name="prefered_contact_method"
@@ -101,7 +102,7 @@
           <option value="Nopreference">No preference</option>
         </select>
         <!-- address -->
-        <label> Enter your street address</label>
+        <label for="streetAddress"> Enter your street address</label>
         <input
           type="text"
           id="streetAddress"
@@ -111,7 +112,7 @@
           required
         >
         <!-- suburb/rown -->
-        <label> Suburb/Town</label>
+        <label for="SuburbTown"> Suburb/Town</label>
         <input
           type="text"
           id="SuburbTown"
@@ -123,8 +124,8 @@
           required
         >
         <p>
-          <label>State/Region</label>
-          <select name="state" class="method" required>
+          <label for="state">State/Region</label>
+          <select id="state" name="state" class="method" required>
             <option value="">Please Select</option>
             <option value="VIC">Victoria</option>
             <option value="NSW">New South Wales</option>
@@ -142,14 +143,14 @@
         <fieldset>
           <legend>Gender</legend>
 
-          <input type="radio" class="gender" name="Gender" value="Male" required>
-          <label>Male</label>
+          <input id="male" type="radio" class="gender" name="Gender" value="Male" required>
+          <label for="male">Male</label>
 
-          <input type="radio" class="gender" name="Gender" value="Female">
-          <label>Female</label>
+          <input id="female" type="radio" class="gender" name="Gender" value="Female">
+          <label for="female">Female</label>
 
-          <input type="radio" class="gender" name="Gender" value="Other">
-          <label>Other</label>
+          <input id="other" type="radio" class="gender" name="Gender" value="Other">
+          <label for="other" >Other</label>
 
           <input type="radio" class="gender" name="Gender" value="Prefer not to say">
           <label>Prefer not to say</label>
@@ -159,8 +160,8 @@
         <br>
 
         <p>
-          <label>Work Rights Status</label>
-          <select name="workright" class="method" required>
+          <label for="workright">Work Rights Status</label>
+          <select id="workright" name="workright" class="method" required>
             <option value="">Please Select</option>
             <option value="citizen">Australian Citizen</option>
             <option value="PermanentResident">
@@ -175,8 +176,9 @@
         <!-- origin -->
 
         <p>
-          <label>Are you aboriginal or torres strait islander origin?</label>
+          <label for="origin">Are you aboriginal or torres strait islander origin?</label>
           <select
+            id="origin"
             name="Aboriginal or torres strit origin"
             class="method"
             required>
@@ -192,7 +194,8 @@
           </select>
 
           <!-- skills -->
-          <label>Please select relevent skills:</label>
+          <fieldset>
+            <legend>Please select relevent skills:</legend>
           <br>
         </p>
 
@@ -248,6 +251,7 @@
           cols="50"
           placeholder="please list other skills...(optional)"
         ></textarea>
+          </fieldset>
 
         <!-- for cover letter text -->
 
@@ -265,8 +269,8 @@
         </div>
 
         <!-- uoload resume -->
-        <p>Upload Your Resume</p>
-        <input type="file" name="documents"><br><br>
+        <label for="resumeUpload">Upload Your Resume</label>
+        <input id="resumeUpload" type="file" name="documents"><br><br>
 
         <!-- submit and reset button -->
         <input id="submitbutton" type="submit" value="Apply">
