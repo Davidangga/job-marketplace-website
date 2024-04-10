@@ -619,11 +619,6 @@ Puprpose: Styling Index pages and CSS typing animation (enhancement)
     width: 55%;
 }
 
-#main-button-container{
-    display: flex;
-    text-align: center;
-}
-
 #main-desc{
     font-family: var(--font-family-secondary);
     width: 100%;
@@ -647,10 +642,26 @@ Puprpose: Styling Index pages and CSS typing animation (enhancement)
     transition: all 0.5s;
 }
 
+#demo-link{
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid #278E61;
+    color: #1C864A;
+    padding: 12px 30px;
+    font-weight: 600;
+    border-radius: 12px;
+    transition: all 0.5s;
+}
+
 #job-button:hover{
     background-color: transparent;
     color: #278E61;
+}
 
+#demo-link:hover{
+    background-color: #1C864A;
+    color: white;
 }
 
 #info-section{
