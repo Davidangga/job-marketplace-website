@@ -157,7 +157,7 @@ nav #hamburger-btn, nav #hamburger-toggle{
 #job-preview-container{
     height: 65vh;
     margin-top: 30px;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 
 .job-preview{
